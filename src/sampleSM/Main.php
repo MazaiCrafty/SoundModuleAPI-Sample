@@ -16,6 +16,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\math\Vector3;
 
 use mazaicrafty\sm\SoundModuleAPI;
+use mazaicrafty\sm\Sound;
 
 class Main extends PluginBase{
 
