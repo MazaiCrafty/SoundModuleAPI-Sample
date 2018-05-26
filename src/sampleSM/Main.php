@@ -23,9 +23,7 @@ class Main extends PluginBase{
         switch ($cmd->getName()){
             case "testsm":
             $level = $sender->getLevel();
-
-            $pos = new Vector3($sender->getX(), $sender->getY(), $sender->getZ());
-            $sound = SoundModuleAPI::createSound('ClickSound', $pos);
+            $sound = SoundModuleAPI::createSoundToPlayer(Sound::CLICK, $sender);
             $level->addSound($sound);
             return true;
         }
